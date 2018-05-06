@@ -1,22 +1,66 @@
 
-<?php  include "inc/header.php" ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<main role="main" class="inner cover">
-    <h1 class="cover-heading">Consulte um especialista.</h1>
-    <p class="lead">É rápido, fácil e integrável. Solicite uma consulta com um especialista no hospital universitário
-        , aguarde alguns minutos e inicie uma conversa por vídeo. </p>
-    <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Saiba mais</a>
-    </p>
-</main>
+    <title>TeleEspecialista</title>
 
-<footer class="mastfoot mt-auto">
-    <div class="inner">
-        <p class="small">Universidade Federal de Uberlândia <br>
-            <a href="https://paulocamargos.github.io/telemed/" class="">Grupo de Telemedicina</a>
-        </p>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">TeleEspecialista</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="#">Início</a></li>
+                            <li><a href="login.php">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="inner cover">
+                <h1 class="cover-heading">Consulte um especialista</h1>
+                <p class="lead">De qualquer lugar do mundo, consulte um médico especialista</p>
+                <p class="lead">
+                    <a href="#" class="btn btn-lg btn-default">Saiba Mais</a>
+                </p>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Universidade Federal de Uberlândia | <a href="https://paulocamargos.github.io/telemed/">TeleEspecialista</a></p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-</footer>
+
 </div>
 
-<?php include "inc/footer.php" ?>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
