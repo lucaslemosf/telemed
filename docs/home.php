@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Static Top Navbar Example for Bootstrap</title>
+    <title>TeleEspecialista - Home</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/navbar-static-top.css" rel="stylesheet">
@@ -40,7 +40,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nome usuário <span class="caret"></span></a>
+                    <a id="menuNomeUsuario" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nome usuário <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -49,6 +49,8 @@
                         <li class="dropdown-header">Nav header</li>
                         <li><a href="#">Separated link</a></li>
                         <li><a href="#">One more separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><button id="buttonLoggout" onclick="loggout()" class="btn btn-primary btn-block" type="button">Loggout</button></li>
                     </ul>
                 </li>
             </ul>
@@ -66,6 +68,51 @@
 <!--        </p>-->
 <!--    </div>-->
 <!--</div>-->
+
+<!-- Inicialização do Firebase (JavaScript) -->
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDAXBlqr1ruV6CKAV7ROmThtNINOz3_ICg",
+    authDomain: "telemedicina-5e24d.firebaseapp.com",
+    databaseURL: "https://telemedicina-5e24d.firebaseio.com",
+    projectId: "telemedicina-5e24d",
+    storageBucket: "telemedicina-5e24d.appspot.com",
+    messagingSenderId: "343042999075"
+  };
+  firebase.initializeApp(config);
+  //<!-- Uso do Firebase (JavaScript) -->
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      var email_id = user.email;
+      // window.alert(
+      //   "Bem-vindo " + email_id + "." +
+      //   "\nVocê está logado no sistema de telemedicina."+
+      //   "\nAtualmente logado.");
+      document.getElementById("menuNomeUsuario").innerHTML = email_id;
+    } else {
+      // No user is signed in.
+      document.getElementById("menuNomeUsuario").innerHTML = "Usuário";
+      window.location = 'http://tele-especialista.sytes.net/login.php'
+    }
+  });
+
+  function loggout(){
+    firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    // firebase.auth().onAuthStateChanged é chamada
+    }).catch(function(error) {
+      // An error happened.
+      // var errorCode = error.code;
+      var errorMessage = error.message;
+      window.alert("Error: " + errorCode + "\n" + errorMessage);
+    });
+  }
+</script>
+
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
