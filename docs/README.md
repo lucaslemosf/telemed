@@ -9,3 +9,6 @@ Documentação do projeto de Telemedicina.
 ![](sequencialUML.jpeg)
 **UML.jpeg**
 ![](UML.jpeg)
+
+**landing_page.png**
+![](landing_page.png)
