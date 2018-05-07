@@ -1,26 +1,26 @@
-# TeleEspecialista - Sistema de agendamento e teleconsulta
+# TeleEspecialista Documentação
 Documentação do projeto de Telemedicina.
 http://tele-especialista.sytes.net/
 
 ## Proposta do Sistema
 **Sistema Atual**
-![](docs/proposta/sistema_atual.png)
+![](proposta/sistema_atual.png)
 **Nossa Proposta**
-![](docs/proposta/sistema_proposto.png)
+![](proposta/sistema_proposto.png)
 
 ## Diagramas UML
 **Use-Cases**
-![](docs/uml-diagrams/use_cases.png)
+![](uml-diagrams/use_cases.png)
 **Mapa do Site**
-![](docs/uml-diagrams/mapa_do_site.png)
+![](uml-diagrams/mapa_do_site.png)
 **Mapa do Site - Perfil do Hospital das Clínicas**
-![](docs/uml-diagrams/mapa_do_site_perfil_hc.png)
+![](uml-diagrams/mapa_do_site_perfil_hc.png)
 **Mapa do Site - Perfil do Posto Médico**
-![](docs/uml-diagrams/mapa_do_site_perfil_pm.png)
+![](uml-diagrams/mapa_do_site_perfil_pm.png)
 
 ## Wireframe
 **Index**
-![](docs/wireframe-diagrams/index.png)
+![](wireframe-diagrams/index.png)
 
 ## Referências
 * Diagramas UML:
