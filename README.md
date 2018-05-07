@@ -41,8 +41,8 @@ Proposta de um sistema de solicitação de consulta que possibilite:
 * Realização de consultas no próprio Posto Médico.
 * Evitar o transporte para consulta com médicos especialistas.
 
-![](resourses/sistema_atual.png)
-![](resourses/sistema_proposto.png)
+![](docs/proposta/sistema_atual.png)
+![](docs/proposta/sistema_proposto.png)
 
 ### Características do Sistema Proposto
 * Baseado no sistema GERCON.
