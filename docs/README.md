@@ -2,15 +2,21 @@
 Documentação do projeto de Telemedicina.
 http://tele-especialista.sytes.net/
 
+## Proposta do Sistema
+**Sistema Atual**
+![](proposta/sistema_atual.png)
+**Nossa Proposta**
+![](proposta/sistema_proposto.png)
+
 ## Diagramas UML
 **Use-Cases**
-![](use_cases.jpeg)
+![](uml-diagrams/use_cases.png)
 **Mapa do Site**
 ![](uml-diagrams/mapa_do_site.png)
 **Mapa do Site - Perfil do Hospital das Clínicas**
 ![](uml-diagrams/mapa_do_site_perfil_hc.png)
 **Mapa do Site - Perfil do Posto Médico**
-![](uml-diagrams/mapa_do_site_perfil_pm.jpeg)
+![](uml-diagrams/mapa_do_site_perfil_pm.png)
 
 ## Wireframe
 **Index**
